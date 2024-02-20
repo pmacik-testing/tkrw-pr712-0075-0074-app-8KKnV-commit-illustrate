@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ppop
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0074-tenant/tkrw-pr712-0075-0074-app/devfile-sample-ppop@sha256:98197d2cb4fe7867002de33a2f6e69d70d6519e27bf703965f85d2a07271f8e4
+        name: my-nodejs
+        resources: {}
+status: {}
